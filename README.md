@@ -1,6 +1,5 @@
 # ✅ Tasks API
 
-![Status](https://img.shields.io/badge/status-unfinished-orange?style=for-the-badge)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
@@ -256,24 +255,7 @@ Fixes for the items in [⚠️ Known Issues](#️-known-issues) are especially w
 
 ---
 
-## 📄 License
-
-Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more information.
-
----
-
-## 👨‍💻 Author
-
-**Samuel Bernardo**
-
-[![GitHub](https://img.shields.io/badge/GitHub-smkhb-181717?style=flat-square&logo=github)](https://github.com/smkhb)
-
----
-
 ## 📚 References
 
 - 📝 [Rocketseat Ignite Node.js: Desafio 01](https://github.com/rocketseat-education/ignite-nodejs-01-fundamentos-nodejs-challenge), the challenge this project is based on
 
----
-
-<p align="center">Made with ☕ and 💻 by Samuel Bernardo</p>
