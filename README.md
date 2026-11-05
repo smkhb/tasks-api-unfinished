@@ -4,7 +4,7 @@
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-> 🚧 **Unfinished project.** This API covers the basic CRUD flow, but it has known bugs (including one that crashes the server) and no tests. It was built as a learning exercise and is kept public as a reference. See [⚠️ Known Issues](#️-known-issues) before using it.
+> 🚧 **Unfinished project.** This API covers the basic CRUD flow, but it has known bugs and no tests. It was built as a learning exercise and is kept public as a reference. See [⚠️ Known Issues](#️-known-issues) before using it.
 
 A task management REST API built with the **Node.js native HTTP module**, with no web framework. It stores data in a local JSON file, supports searching tasks, and can import tasks from a CSV file. 📝
 
@@ -202,10 +202,6 @@ This is fine for learning and small local tests. It is **not** suitable for prod
 
 These issues were found by reading the code and by running the API locally. Items marked 🔬 were confirmed by running the server. Items marked 📖 come from code reading only.
 
-**🔴 Critical**
-
-- 💥 **Empty or invalid JSON body crashes the whole server.** 🔬 `POST /tasks` with no body makes `req.body` `null`, and destructuring it throws an error that is not caught. The Node.js process exits. The same happens with malformed JSON.
-
 **🟠 Bugs**
 
 - 🧹 **`PUT` without `description` erases the description.** 🔬 Missing fields become `undefined`, so `PUT` with only `title` saves the task without a `description` field.
@@ -228,7 +224,6 @@ These issues were found by reading the code and by running the API locally. Item
 
 ## 🗺️ Roadmap
 
-- [ ] Fix the server crash on empty or invalid JSON bodies
 - [ ] Validate request bodies (required fields, types, length)
 - [ ] Return `404` for unknown task IDs
 - [ ] Keep unchanged fields on `PUT`

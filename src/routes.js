@@ -23,6 +23,9 @@ export const routes = [
     method: "POST",
     path: buildRoutePath("/tasks"),
     handler: async (req, res) => {
+      if (!req.body) {
+        return res.writeHead(400).end();
+      }
       const { title, description } = req.body;
       const task = {
         id: randomUUID(),
@@ -41,6 +44,9 @@ export const routes = [
     method: "PUT",
     path: buildRoutePath("/tasks/:id"),
     handler: async(req, res) => {
+      if (!req.body) {
+        return res.writeHead(400).end();
+      }
       const { id } = req.params;
       const { title, description } = req.body;
       database.update("tasks", id, { title, description });
