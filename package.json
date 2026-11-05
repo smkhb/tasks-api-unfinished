@@ -2,15 +2,15 @@
   "name": "tasks",
   "type": "module",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch src/server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
+  "description": "A task management REST API built with the Node.js native HTTP module, with CSV import and task search.",
   "dependencies": {
     "csv-parse": "^5.5.6"
   }
