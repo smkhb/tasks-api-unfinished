@@ -194,7 +194,7 @@ Tasks are stored in `database.json` at the project root:
 
 This is fine for learning and small local tests. It is **not** suitable for production. See the Roadmap below.
 
-> 📌 `database.json` is currently committed to the repository, so the sample data in it is public.
+> 🔒 `database.json` is git-ignored, so your local data is never committed.
 
 ---
 
